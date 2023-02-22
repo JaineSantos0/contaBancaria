@@ -84,7 +84,7 @@ public class Conta {
             case 2 -> tipo = "Conta Poupança";
         }
 
-        System.out.println(Cores.TEXT_PURPLE_BOLD + Cores.TEXT_BLACK_BOLD + "--------------------------------");
+        System.out.println(Cores.TEXT_PURPLE_BOLD + Cores.ANSI_BLACK_BACKGROUND + "--------------------------------");
         System.out.println("--------Dados da conta:---------");
         System.out.println("--------------------------------");
         System.out.println("Número da Conta: " + numero);
