@@ -15,37 +15,10 @@ public class Menu {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Conta conta1 = new Conta(1, 123, 1, "Erica Araújo", 30000f);
-
-        conta1.visualizar();
-
-        conta1.setSaldo(35000f);
-
-        System.out.println(conta1.getSaldo());
-
-        Conta conta2 = new Conta(2, 123, 1, "Dener Cardoso", 50000.0f);
-
-        conta2.visualizar();
-
-        if (conta2.sacar(100000f))
-            System.out.println(conta2.getSaldo());
-
-        conta1.depositar(10000f);
-
-        conta1.visualizar();
-
         ContaCorrente c3 = new ContaCorrente(1, 245, 1, "Jaine Josiane", 10000, 5000);
-        c3.visualizar();
-        c3.sacar(17000.00f);
-        c3.visualizar();
-        c3.depositar(5000.00f);
         c3.visualizar();
 
         ContaPoupanca c4 = new ContaPoupanca(2, 134,2,"Jose Silva",40000.00f,12);
-        c4.visualizar();
-        c4.sacar(20000.00f);
-        c4.visualizar();
-        c4.depositar(10000.00f);
         c4.visualizar();
 
         int opcao;
