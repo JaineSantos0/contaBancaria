@@ -167,14 +167,25 @@ public class Menu {
                 case 6:
                     System.out.println("6- Sacar");
                     System.out.println("Número da Conta: ");
+                    numero = sc.nextInt();
+
                     System.out.println("Valor do Saque: ");
+                    valor = sc.nextFloat();
+
+                    contas.sacar(numero, valor);
 
                     keyPress();
                     break;
                 case 7:
                     System.out.println("7- Depositar");
                     System.out.println("Número da Conta: ");
+                    numero = sc.nextInt();
+
                     System.out.println("Valor do depósito: ");
+                    valor = sc.nextFloat();
+
+                    contas.depositar(numero, valor);
+
                     keyPress();
                     break;
                 case 8:
@@ -188,6 +199,8 @@ public class Menu {
 
                     System.out.println("Valor da Transferência: ");
                     valor = sc.nextFloat();
+
+                    contas.transferir(numero, numeroDestino, valor);
 
                     keyPress();
                     break;
